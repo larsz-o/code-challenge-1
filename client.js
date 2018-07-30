@@ -14,10 +14,10 @@ function appendDiv() {
     let newDiv = $('.red');
     divArray.push(newDiv);
     let counter = divArray.length;
-    $(this).closest('.red').append('<p> Div Number: ' + counter + '</p>'); 
-
+    $(this).parent().find('.red').append('<p> Div Number: ' + counter + '</p>'); // I can't figure out how to get the text to not repeat on each new box. 
+    // I had misread the instructions at first (creating a counter on the top of the page), so I lost some time in figuring this out
 }
-   
+
 function swapColors() {
     $(this).parent().toggleClass('yellow');
 }
