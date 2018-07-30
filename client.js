@@ -16,7 +16,6 @@ function appendDiv() {
 
 function swapColors() {
     $(this).parent().toggleClass('yellow');
-    // $(this).parent().find('.red').css('background-color', 'yellow'); 
 }
 
 function deleteDiv() {
