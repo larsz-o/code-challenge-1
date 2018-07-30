@@ -1,0 +1,11 @@
+
+.red {
+    width: 450px;
+    height: 100px;
+    margin: 10px; 
+    background-color: red; 
+}
+
+.yellow {
+    background-color: yellow; 
+}
