@@ -1,6 +1,7 @@
 $(document).ready(readyNow);
 
 let clickTotal = 0;
+let divArray = [];
 
 function readyNow() {
     $('#generate-button').on('click', appendDiv);
@@ -10,10 +11,13 @@ function readyNow() {
 
 function appendDiv() {
     $('#color-div-container').append('<div class="red"><button class="swap">Swap</button><button class="delete">Delete</button></div>');
-    clickTotal++;
-    $('#counter-container').html('<p> Times Clicked: ' + clickTotal + '</p>');
-}
+    let newDiv = $('.red');
+    divArray.push(newDiv);
+    let counter = divArray.length;
+    $(this).closest('.red').append('<p> Div Number: ' + counter + '</p>'); 
 
+}
+   
 function swapColors() {
     $(this).parent().toggleClass('yellow');
 }
